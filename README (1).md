@@ -64,4 +64,5 @@ Veritabanı Ayarları:src/main/resources (veya ilgili dizin) altındaki Singleto
 
 Not: Bu proje, Yazılım Mühendisliği / Yazılım Mimarisi ve Tasarımı dersi kapsamında Nesne Yönelimli Programlama ve Tasarım Desenleri yetkinliklerini göstermek amacıyla geliştirilmiştir.   
 Kişiler:    
-Huriye Güngör : https://github.com/huriyegungorr/KutuphaneYonetimSistemi
+Huriye Güngör : https://github.com/huriyegungorr/KutuphaneYonetimSistemi  
+Emel Cansu : https://github.com/emelcansu/LibraryManagementSystem
