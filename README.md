@@ -49,7 +49,7 @@ Odunc (İşlem kayıtları)
 Cezalar ve Rezervasyonlar   
 
 ## Kurulum ve Çalıştırma  
-Projeyi Klonlayın: git clone https://github.com/huriyegungorr/KutuphaneYonetimSistemi.git
+Projeyi Klonlayın: git clone https://github.com/huriyegungorr/KutuphaneYonetimSistemi.git  
 Veritabanını içe Aktarın:MySQL'de dbkutuphaneyonetimsistemi adında bir veritabanı oluşturun.  
 Proje dosyasındaki database.sql dosyasını bu veritabanına import edin.    
 Veritabanı Ayarları:src/main/resources (veya ilgili dizin) altındaki SingletonDBConnection sınıfında yer alan kullanıcı adı ve şifreyi kendi yerel veritabanı bilgilerinizle güncelleyin.  
