@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="880.0" spacing="20.0" style="-fx-padding: 20; -fx-background-color: #ffffff;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.kutuphaneyonetimsistemi.ui.controller.OduncVerManuelController">
+
+    <Label text="Manuel Kitap Ödünç Verme" textFill="#2c3e50">
+        <font><Font name="System Bold" size="20.0" /></font>
+    </Label>
+
+    <GridPane hgap="15.0" vgap="15.0">
+        <columnConstraints>
+            <javafx.scene.layout.ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="180.0" />
+            <javafx.scene.layout.ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="500.0" />
+        </columnConstraints>
+
+        <Label text="Üye TCKN / ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="txtUyeKimlik" promptText="Üye Kimlik veya TCKN girin" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Kitap ISBN:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="txtKitapISBN" promptText="Kitap ISBN numarasını girin" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    </GridPane>
+
+    <Button mnemonicParsing="false" onAction="#handleOduncVer" text="Ödünç Verme İşlemini Tamamla" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10 20;">
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </Button>
+
+    <Label fx:id="lblDurumMesaji" style="-fx-text-fill: #e74c3c;" />
+
+</VBox>

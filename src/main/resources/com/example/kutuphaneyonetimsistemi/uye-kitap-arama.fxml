@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #f4f7f6;"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.kutuphaneyonetimsistemi.ui.controller.UyeKitapAramaController">
+
+    <Label text="📚 Kitap Arama ve Listeleme" style="-fx-font-weight: bold;">
+        <font><Font size="22.0" /></font>
+    </Label>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+
+        <Label text="Kriter:" style="-fx-font-weight: bold;" />
+        <ComboBox fx:id="aramaKriteri" prefWidth="150" promptText="Kriter Seç" />
+
+        <TextField fx:id="aramaMetni" promptText="Arama Metni (Yazmaya başlayın...)" HBox.hgrow="ALWAYS" />
+
+        <Button text="Temizle/Sıfırla" onAction="#handleReset" style="-fx-background-color: #f18c8e; -fx-text-fill: white;" />
+    </HBox>
+
+    <TableView fx:id="kitapTablosu" VBox.vgrow="ALWAYS"
+               style="-fx-text-fill: black;">
+        <columns>
+            <TableColumn fx:id="adCol" text="Kitap Adı" prefWidth="200" />
+            <TableColumn fx:id="yazarCol" text="Yazar Adı" prefWidth="120" />
+            <TableColumn fx:id="isbnCol" text="ISBN" prefWidth="100" />
+
+            <TableColumn fx:id="kategoriCol" text="Kategori" prefWidth="100" />
+
+            <TableColumn fx:id="mevcutDurumCol" text="Mevcut Durum" prefWidth="100" />
+            <TableColumn fx:id="adetCol" text="Adet" prefWidth="60" />
+            <TableColumn fx:id="konumCol" text="Konum (Raf No)" prefWidth="80" />
+            <TableColumn fx:id="rezerveCol" text="Rezerve Et" prefWidth="120" />
+
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+</VBox>

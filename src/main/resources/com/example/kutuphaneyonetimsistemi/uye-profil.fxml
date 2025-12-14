@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #f4f7f6;"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.kutuphaneyonetimsistemi.ui.controller.UyeProfilController">
+    <Label text="👤 Profil Bilgileri" style="-fx-font-weight: bold;">
+        <font><Font size="22.0" /></font>
+    </Label>
+
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints prefWidth="150" />
+            <ColumnConstraints prefWidth="300" />
+        </columnConstraints>
+
+        <Label text="Ad:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="adField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Label text="Soyad:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="soyadField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Label text="T.C. Kimlik No:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="tcKimlikField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                   style="-fx-background-color: #e0e0e0;" /> <Label text="Kullanıcı Adı:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="kullaniciAdiField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Label text="E-posta:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <Label text="Telefon:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <TextField fx:id="telefonField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+        <Label text="Yeni Şifre:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <PasswordField fx:id="sifreField" promptText="Değiştirmek için girin" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+        <Label text="Şifre Tekrar:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <PasswordField fx:id="sifreTekrarField" promptText="Şifreyi tekrar girin" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+    </GridPane>
+
+    <Button text="Bilgileri Güncelle" onAction="#handleProfilGuncelle"
+            style="-fx-background-color: #2a6a97; -fx-text-fill: white;" />
+
+    <Label fx:id="profilMesajLabel" text="" style="-fx-text-fill: green;"/>
+
+</VBox>
