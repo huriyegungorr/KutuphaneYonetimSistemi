@@ -29,7 +29,7 @@ public class SingletonDBConnection {
     public Connection getConnection() throws SQLException {
         try {
             final String URL = "jdbc:mysql://localhost:3306/dbkutuphaneyonetimsistemi?serverTimezone=UTC";
-            final String USER = "root";
+            final String USER = "";
             final String PASSWORD = "";
 
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
